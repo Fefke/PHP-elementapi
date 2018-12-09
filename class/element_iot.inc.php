@@ -18,14 +18,12 @@
 		
 		
 		
-		public function __construct($api_key, $domain = NULL) {
+		public function __construct($api_key, $domain = NULL, $proxy = NULL) {
 			$this->api_key = $api_key;
-			
 			$this->api_path = (isset($domain)) ? $domain : $this->api_path;
+			$this->proxy = (isset($proxy)) ? $proxy : $this->proxy;
 		}//__construct($api_key, $domain = NULL)		
-		
-		
-		
+			
 		
 		
 		/* Getter / Setter */
@@ -38,8 +36,16 @@
 			//Return last 8 Symbols of the API-KEY -> for security reasons
 		}//public function getAPI()
 		
+		public function set_domain($domain) {
+			$this->domain = $domain;
+		}//public function set_domain($domain)
 		
-		public function get($tp = [], $configuration = []) {
+		public function get_domain() {
+			return $this->domain;
+		}//public function get_domain()
+		
+		
+		public function get($tp = "devices", $configuration = []) {
 			$gu = $this->generateURL($tp, $configuration);
 			if ($gu !== true )
 				return $gu;
