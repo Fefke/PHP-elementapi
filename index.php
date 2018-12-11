@@ -2,10 +2,10 @@
 
 	require "class/element_iot.inc.php";
 	// For more Informations see Documentation!
-	$element_iot = new element_iot("1d08cbb43a64c62e7358be4404e2d578", "ssl://iot.stadtwerke-karlsruhe.de");//__construct($api_key, $domain)
+	$element_iot = new element_iot("your_api_key", "your_domain");//__construct($api_key, $domain)
 
 	
-	$data = $element_iot->get(["devices", "readings"], ["limit" => 1,"id" => "f5261911-7f7b-4870-a5f5-7f4c7e9ff5e5"]);//Konfigriert darauf, die letzten 5 Messwerte zu holen
+	$data = $element_iot->get(["devices", "readings"], ["limit" => 1,"id" => "your_device_id_see_README!"]);//Konfigriert darauf, die letzten 5 Messwerte zu holen
 	
 ?>
 <!DOCTYPE html>
