@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #2d0f0f } 
+		.shp1 { fill: #4c1b1b } 
+		.shp2 { fill: #ffff00 } 
+	</style>
+	<path id="Shape 3" class="shp0" d="M126,496h259v-487h-259z" />
+	<path id="Shape 2" class="shp1" d="M132,498h248v-483h-248z" />
+	<path id="Shape 1" class="shp2" d="M320,264h38v-8h-38z" />
+</svg>

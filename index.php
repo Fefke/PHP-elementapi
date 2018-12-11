@@ -22,5 +22,7 @@
 				Über CSS wird auf dieses DIV ein BG gesetzt
 			-->
 		</div>
+		<h1><?php echo $data["body"][0]["data"]["position"];?></h1>
+		<h2><?php echo var_dump($data["body"][0]);?></h2>
 	</body>
 </html>
